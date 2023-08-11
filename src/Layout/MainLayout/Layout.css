@@ -1,0 +1,20 @@
+.layout {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 15% 5% 77% 3%;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+  
+}
+
+
+.MainLayout{
+  background-color: #d5d0d0;
+
+}
