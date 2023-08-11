@@ -24,16 +24,16 @@ const Projects: React.FC = () => {
       title: 'crypto api',
       description: ' RESTfull api app that get data of cryptocurrencies and filtering options. the user can add favorites cryptocurrencies and get all info of the coin that fetched from the api data , built with jQuery , bootsrap ',
       image: cr,
-      githubLink: 'https://github.com/yourusername/yourproject2',
-      liveLink: 'https://www.example.com/project2',
+      githubLink: 'https://github.com/edensitko/crypto-project',
+      liveLink: 'https://edensitko.github.io/crypto-project/',
     },
    
     {
       title: 'my portfolio',
       description: 'my portfolio is an app built using react ,Responsive Showcasing interactive design through dynamic components and stylish aesthetics.  ',
       image: res,
-      githubLink: 'https://github.com/edensitko/edenSite',
-      liveLink: 'https://edensitko.github.io/edenSite/',
+      githubLink: 'https://github.com/edensitko/my-portfolio',
+      liveLink: 'https://edensitko.github.io/portfoliolive/',
     },
   ];
 
