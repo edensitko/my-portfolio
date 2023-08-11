@@ -1,0 +1,29 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+
+  }
+
+  .containerfooter{
+    padding: 20px;
+  }
+  .down{
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+  }
+  .flink{
+    color: #ffffff ;
+    margin: 5px;
+  }
+  .flink svg {
+    font-size: 40px; }
+
+  .containerfooter h6{
+color: rgb(145, 199, 177);
+font-size: larger;
+  }

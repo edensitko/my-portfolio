@@ -1,0 +1,141 @@
+/* Global Styles */
+:root {
+    --background-color: rgba(245, 243, 240, 0);
+    --text-color: hsl(160, 26%, 50%);
+    overflow-x: hidden; /* Prevent horizontal scroll due to content width */
+
+  }
+  .wrapper {
+    display: grid;
+    background-color: var(--background-color);
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:  hsl(160, 13%, 47%);
+    text-align: left;
+    margin-bottom: 30px;
+    
+
+  }
+.slink{
+  color: #1d1c1c ;
+  margin: 5px;
+}
+.slink svg {
+  font-size: 40px; 
+}
+  .Home{
+    background: linear-gradient(170deg , #d5d0d0 70%,  #333 50%);
+    margin-top: 100px;
+    height: 800px;
+    width: 100%;
+  }
+.headers{
+  height: 550px;
+}
+  @media only screen and (max-width: 700px) {
+    .wrapper {
+      font-size: 40px;
+    }
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+  
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(
+      177deg,
+      rgb(26, 45, 47) 53%,
+      var(--text-color) 65%
+    );
+    background: linear-gradient(
+      177deg,
+      rgb(109, 164, 139) 53%,
+      var(--text-color) 65%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+
+  }
+  
+ 
+ .first-head{
+  text-align: left;
+  font-size: 15px;
+  color: #1d1c1c;
+   }
+ .second-head{
+  margin-top: -60px;
+  text-align: left;
+  color: #676464;
+  font-weight: 700;
+  font-size:large;
+
+
+ }
+ .third-head{
+text-align: left;
+font-size: small;
+color: #676464;
+padding: 10px;
+ }
+ .button {
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  background-color: #78c596;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+
+  background-color: #9fcf8f;
+  color: #fff;
+}
+
+
+.slide-right, .slide-left {
+  width: 30%;
+}
+
+
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.fade-in {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.atop{
+margin-bottom: -15px;
+}
