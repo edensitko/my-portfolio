@@ -10,9 +10,7 @@ const Layout: React.FC = () => {
   return (
     <div className="MainLayout"> 
             <div className="header">
-              <React.Fragment>
                <Header /> 
-               </React.Fragment>
                  </div>
               <Home /> 
                <About />

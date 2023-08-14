@@ -9,6 +9,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import SvgIcon from '@mui/icons-material/ArrowDownward';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Typewriter from "typewriter-effect";
 
 const Home: React.FC = () => {
   return (
@@ -21,8 +22,6 @@ const Home: React.FC = () => {
                 Hi, my name is
           </div>
           <div className="slide-right">
-   
-      
           <div className="wrapper atop">  
             <div className="top">eden </div>
             <div className="bottom" aria-hidden="true">
@@ -42,7 +41,19 @@ const Home: React.FC = () => {
              <br/>
           </div>
           <div className="second-head">
-            I'm a Full Stack Developer.
+           <Typewriter
+      options={{
+        strings: [
+           "Full-Stack Developer",
+          "Front-End Developer",
+          "Back-End Developer",
+        ],
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 30,
+      }}
+    />
+
           </div>
           <div className="third-head">
           I’m a full-stack developer specializing in building 

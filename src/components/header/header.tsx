@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from 'react-scroll';
+import esImage from '../sources/es.png'; 
 
 const Header: React.FC = () => {
   const [navbarActive, setNavbarActive] = useState(false);
@@ -18,26 +19,10 @@ const Header: React.FC = () => {
         <div className="containerHead">
           <div className="row align-items-center">
             <div className="col-md-6 col-9">
-              <h1>portfolio </h1>
+            <img src={esImage} alt="Your Image" className="image es" />
+
             </div>
             <div className="col-md-6 col-3 d-flex justify-content-center">
-              {/* /* <div className="logo-container">
-                <a href="https://github.com/edensitko" target="_blank" rel="noopener noreferrer">
-                  <div className="logo-background">
-                    <GitHubIcon fontSize="medium" />
-                  </div>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="logo-background">
-                    <LinkedInIcon fontSize="medium" />
-                  </div>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="logo-background">
-                    <FacebookIcon fontSize="medium" />
-                  </div> 
-                </a>
-              </div>*/}
             </div>
           </div>       
              </div>

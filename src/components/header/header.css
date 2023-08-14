@@ -6,8 +6,9 @@
   color: aliceblue;
   height: 80px;
   padding: 0 20px;
-  justify-content: space-between; /* Add space between elements */
-
+  justify-content: space-between; 
+  position: sticky !important;
+  top: 0 !important;
 }
 .header-container {
   width: 100%;
@@ -17,6 +18,10 @@
   left: -20px;
   color: aquamarine;
   font-size: 25px;
+}
+
+.es{
+  padding: 5px;
 }
 
 .logo-container {
