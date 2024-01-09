@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfoliolive/static/css/main.022e1be7.css",
+    "main.js": "/portfoliolive/static/js/main.65ff50d5.js",
+    "static/js/787.9883dba9.chunk.js": "/portfoliolive/static/js/787.9883dba9.chunk.js",
+    "static/media/me.png": "/portfoliolive/static/media/me.0da9a2dd7cdcc0f2bcf7.png",
+    "static/media/mysql.png": "/portfoliolive/static/media/mysql.167c88550478e6f0f85c.png",
+    "static/media/ft.png": "/portfoliolive/static/media/ft.cd4751bbce42e553c039.png",
+    "static/media/vac.png": "/portfoliolive/static/media/vac.444a3e0667a4e4c7e177.png",
+    "static/media/cr.png": "/portfoliolive/static/media/cr.77dea73097304fca395a.png",
+    "static/media/tailwind.png": "/portfoliolive/static/media/tailwind.3549d9e451d7abb96934.png",
+    "static/media/chs.png": "/portfoliolive/static/media/chs.9779b829f7cada997fd3.png",
+    "static/media/jquery.png": "/portfoliolive/static/media/jquery.5218d846e86fbcafcc5d.png",
+    "static/media/bts.png": "/portfoliolive/static/media/bts.cb0fcc269e8250f3551b.png",
+    "static/media/html.png": "/portfoliolive/static/media/html.1d7b133e22ffe4829da6.png",
+    "static/media/es.png": "/portfoliolive/static/media/es.0be0f7dadece40a6b458.png",
+    "static/media/node.png": "/portfoliolive/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/react.png": "/portfoliolive/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/mongo.png": "/portfoliolive/static/media/mongo.2a1528ddc31d4ce8518d.png",
+    "static/media/express.png": "/portfoliolive/static/media/express.548f1cfd65ae2d062126.png",
+    "static/media/css.png": "/portfoliolive/static/media/css.99426a611bd5b768e71d.png",
+    "static/media/github.png": "/portfoliolive/static/media/github.987334e9f782cc505f25.png",
+    "static/media/ts.png": "/portfoliolive/static/media/ts.bb13ebd9561a6ee645c2.png",
+    "static/media/js.png": "/portfoliolive/static/media/js.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/firebase.png": "/portfoliolive/static/media/firebase.65c4fe9f7eb228db7a4c.png",
+    "index.html": "/portfoliolive/index.html",
+    "main.022e1be7.css.map": "/portfoliolive/static/css/main.022e1be7.css.map",
+    "main.65ff50d5.js.map": "/portfoliolive/static/js/main.65ff50d5.js.map",
+    "787.9883dba9.chunk.js.map": "/portfoliolive/static/js/787.9883dba9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.022e1be7.css",
+    "static/js/main.65ff50d5.js"
+  ]
+}
