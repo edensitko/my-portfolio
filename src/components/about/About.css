@@ -1,24 +1,32 @@
 .about{
-background-color:  #333;
 text-align: center;
 color: aliceblue;
+width: 100%; 
 
-
-
+ 
 }
 .circular-image{
+  position: absolute;
+  left: -200px; 
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: -340px;
-    
+    animation: rotate 3s linear , roll 3s linear forwards;
+    background-size: auto 100%, cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -220px;
+    border:2px solid #76cb98;
+    padding: 2px;
 }
+
 h1 {
+  font-family: 'Alice', serif;
   position: relative;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-top: -40px;
 }
 
 h1::before {
@@ -32,12 +40,6 @@ h1::before {
   transform: translateX(-50%);
 }
 
-
-
-  .tech-section h3 {
-    margin-bottom: 10px;
-  }
-
   .card-body {
     width: 100%;
     display: flex;
@@ -47,52 +49,122 @@ justify-content: center;
   
   .card {
     padding:20px;
-    background: linear-gradient(150deg , hsl(0, 1%, 26%) 50%,  #333 70%);
+    background: linear-gradient(150deg , hsl(0, 1%, 28%) 50%,  #333 70%);
     border-radius: 20px;
-    margin: 8px;
+    margin: 25px 5px 10px 3px;
     text-align: center;
     color:rgb(255, 255, 255);
-    font-weight: 300;
-    font-size: 20px;
-    width: 160px; 
-     transition: all .2s ease-in-out; 
+    font-weight: 600;
+    font-size: 15px;
+    width: 130px; 
+    height: 50px;
+   transition: all .2s ease-in-out; 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }  
-    .card:hover { 
-    transform: scale(1.1); 
-    }
+  
   .card-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #9edeb8;
+    text-decoration: underline  white ;
+    font-family: 'Alice', serif;
   }
   .image{
-    height: 70px;
+    height: 50px;
     margin: auto;
   }
   .js{
-    height: 50px;
+    height: 45px;
   }
   .html{
     height: 50px;
   }
   .css{
-    height: 70px;
-  }
-  .sass{
     height: 60px;
+    margin:auto;
+
   }
+ .card .css{
+margin-top:-100px;
+ }
   .php{
-    height: 60px;
+    height: 45px;
   }
   .bts{
-    height: 60px;
+    height: 40px;
   }
 .express{
-  margin-left: -30px;
-  height: 60px;
+  margin-left: -35px;
+  height: 50px;
 
 }
-.summ{
-  padding: 0px 30px;
-  margin: auto;
+.tailwind{
+  height: 40px;
 }
+.summ{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  
+
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes roll {
+  0%{
+    left: -9rem;
+  }
+
+  100% {
+    left: calc(50% - 100px ); 
+  }
+  
+}
+
+
+h3{
+  margin-top: 30px;
+  color: #76cb98;
+}
+
+.image{
+  margin-top: -90px;
+}
+
+h5{
+  margin-bottom: 50px;
+}
+
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50%  { transform: translateY(4px); }
+  100%   { transform: translateY(0px); }
+  
+ 
+}
+.floating:hover{
+  transition: all .2s ease-in-out;
+}
+  
+
+
+
+
+

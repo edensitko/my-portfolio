@@ -1,141 +1,232 @@
-/* Global Styles */
 :root {
-    --background-color: rgba(245, 243, 240, 0);
-    --text-color: hsl(160, 26%, 50%);
-    overflow-x: hidden; /* Prevent horizontal scroll due to content width */
+  --text-color: #5cae93;
+  overflow-x: hidden; 
 
-  }
-  .wrapper {
-    display: grid;
-    background-color: var(--background-color);
-    font-family: "Oswald", sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color:  hsl(160, 13%, 47%);
-    text-align: left;
-    margin-bottom: 30px;
-    
-
-  }
+}
+.name{
+  margin-top: 100px;
+  
+}
+.headerA{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.wrapper {
+  display: grid;
+  background-color: var(--background-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color:  #94edcf;
+  text-align: left;
+  font-family: 'Alice', serif;
+}
 .slink{
-  color: #1d1c1c ;
-  margin: 5px;
+color: #f8f0f0 ;
+margin: 5px;
 }
 .slink svg {
-  font-size: 40px; 
+font-size: 40px; 
 }
-  .Home{
-    background: linear-gradient(170deg , #d5d0d0 70%,  #333 50%);
-    margin-top: 100px;
-    height: 800px;
-    width: 100%;
-  }
+.Home{
+  width: 100%;
+
+}
 .headers{
-  height: 550px;
+height: 550px;
+
 }
-  @media only screen and (max-width: 700px) {
-    .wrapper {
-      font-size: 40px;
-    }
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    font-size: 40px;
   }
-  
-  .wrapper > div {
-    grid-area: 1/1/-1/-1;
-  }
-  
-  .top {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
-  }
-  
-  .bottom {
-    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
-    color: transparent;
-    background: -webkit-linear-gradient(
-      177deg,
-      rgb(26, 45, 47) 53%,
-      var(--text-color) 65%
-    );
-    background: linear-gradient(
-      177deg,
-      rgb(109, 164, 139) 53%,
-      var(--text-color) 65%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    transform: translateX(-0.02em);
+}
 
-  }
-  
- 
- .first-head{
-  text-align: left;
-  font-size: 15px;
-  color: #1d1c1c;
-   }
- .second-head{
-  margin-top: -60px;
-  text-align: left;
-  color: #676464;
-  font-weight: 700;
-  font-size:large;
+.wrapper > div {
+  grid-area: 1/1/-1/-1;
+}
+
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(
+    177deg,
+    rgb(125, 198, 208) 53%,
+    var(--text-color) 65%
+  );
+  background: linear-gradient(
+    177deg,
+    hsl(152, 28%, 44%) 53%,
+    var(--text-color) 65%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+
+}
 
 
+.first-head{
+text-align: left;
+font-size: 15px;
+color: #f4eeee;
  }
- .third-head{
+.second-head{
+margin-top: -20px;
+text-align: left;
+color: #b7a8a8;
+font-weight: 700;
+font-size:large;
+
+
+}
+.third-head{
 text-align: left;
 font-size: small;
-color: #676464;
+color: #f9f4f4;
 padding: 10px;
- }
- .button {
-  padding: 12px 22px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
-  background-color: #78c596;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
+}
+.button {
+padding: 12px 22px;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+border: none;
+border-radius: 4px;
+background-color: hsl(152, 28%, 44%) ;
+color: #ffffff;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+text-decoration: none;
+font-family: 'Alice', serif;
 }
 
 .button:hover {
 
-  background-color: #9fcf8f;
-  color: #fff;
+background-color: #799e7d;
+color: #fff;
 }
 
 
 .slide-right, .slide-left {
-  width: 30%;
+width: 30%;
 }
 
 
 .slide-right {
-  animation: 3s slide-right;
+animation: 3s slide-right;
 }
 @keyframes slide-right {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
+from {
+  margin-left: -100%;
+}
+to {
+  margin-left: 0%;
+}
 }
 .fade-in {
-  animation: fadeIn ease 3s;
+animation: fadeIn ease 3s;
 }
 @keyframes fadeIn{
-  0% {
-    opacity:0;
+0% {
+  opacity:0;
+}
+100% {
+  opacity:1;
+}
+}
+
+
+.space {
+  background-size: cover;
+  z-index: -1;
+  background: linear-gradient(5deg, #151515 20%, transparent 20%),
+  url('https://img.freepik.com/premium-photo/night-sky-stars-galaxies-sky-dusk_494741-58778.jpg') no-repeat;
+  background-size: auto 100%, cover;
+  height: 125vh;
+}
+.space:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+@keyframes sf-fly-by-1 {
+  from {
+      transform: translateZ(-600px);
+      opacity: 0.5;
   }
-  100% {
-    opacity:1;
+  to {
+      transform: translateZ(0);
+      opacity: 0.5;
   }
 }
-.atop{
-margin-bottom: -15px;
+@keyframes sf-fly-by-2 {
+  from {
+      transform: translateZ(-1200px);
+      opacity: 0.5;
+  }
+  to {
+      transform: translateZ(-600px);
+      opacity: 0.5;
+  }
+}
+@keyframes sf-fly-by-3 {
+  from {
+      transform: translateZ(-1800px);
+      opacity: 0.5;
+  }
+  to {
+      transform: translateZ(-1200px);
+      opacity: 0.5;
+  }
+}
+.star-field {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  perspective: 600px;
+  -webkit-perspective: 600px;
+  z-index: -1;
+}
+.star-field .layer {
+  box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
+      524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
+      440px 490px #d4d4d4, 414px 507px #e6e6e6, -12px 246px #fcfcfc, -384px 369px #e3e3e3, 641px -413px #fcfcfc, 822px 516px #dbdbdb, 449px 132px #c2c2c2, 727px 146px #f7f7f7, -315px -488px #e6e6e6, 952px -70px #e3e3e3,
+      -869px -29px #dbdbdb, 502px 80px #dedede, 764px 342px #e0e0e0, -150px -380px #dbdbdb, 654px -426px #e3e3e3, -325px -263px #c2c2c2, 755px -447px #c7c7c7, 729px -177px #c2c2c2, -682px -391px #e6e6e6, 554px -176px #ededed,
+      -85px -428px #d9d9d9, 714px 55px #e8e8e8, 359px -285px #cfcfcf, -362px -508px #dedede, 468px -265px #fcfcfc, 74px -500px #c7c7c7, -514px 383px #dbdbdb, 730px -92px #cfcfcf, -112px 287px #c9c9c9, -853px 79px #d6d6d6,
+      828px 475px #d6d6d6, -681px 13px #fafafa, -176px 209px #f0f0f0, 758px 457px #fafafa, -383px -454px #ededed, 813px 179px #d1d1d1, 608px 98px whitesmoke, -860px -65px #c4c4c4, -572px 272px #f7f7f7, 459px 533px #fcfcfc,
+      624px -481px #e6e6e6, 790px 477px #dedede, 731px -403px #ededed, 70px -534px #cccccc, -23px 510px #cfcfcf, -652px -237px whitesmoke, -690px 367px #d1d1d1, 810px 536px #d1d1d1, 774px 293px #c9c9c9, -362px 97px #c2c2c2,
+      563px 47px #dedede, 313px 475px #e0e0e0, 839px -491px #e3e3e3, -217px 377px #d4d4d4, -581px 239px #c2c2c2, -857px 72px #cccccc, -23px 340px #dedede, -837px 246px white, 170px -502px #cfcfcf, 822px -443px #e0e0e0, 795px 497px #e0e0e0,
+      -814px -337px #cfcfcf, 206px -339px #f2f2f2, -779px 108px #e6e6e6, 808px 2px #d4d4d4, 665px 41px #d4d4d4, -564px 64px #cccccc, -380px 74px #cfcfcf, -369px -60px #f7f7f7, 47px -495px #e3e3e3, -383px 368px #f7f7f7, 419px 288px #d1d1d1,
+      -598px -50px #c2c2c2, -833px 187px #c4c4c4, 378px 325px whitesmoke, -703px 375px #d6d6d6, 392px 520px #d9d9d9, -492px -60px #c4c4c4, 759px 288px #ebebeb, 98px -412px #c4c4c4, -911px -277px #c9c9c9;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+}
+.star-field .layer:nth-child(1) {
+  animation: sf-fly-by-1 5s linear infinite;
+}
+.star-field .layer:nth-child(2) {
+  animation: sf-fly-by-2 5s linear infinite;
+}
+.star-field .layer:nth-child(3) {
+  animation: sf-fly-by-3 5s linear infinite;
 }

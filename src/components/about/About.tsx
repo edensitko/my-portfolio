@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import meImage from '../sources/me.png'; // Import the image
 import './About.css';
@@ -17,21 +16,29 @@ import angularImage from '../sources/angular.png'; // Import the image
 import jqueryImage from '../sources/jquery.png'; // Import the image
 import tsImage from '../sources/ts.png'; // Import the image
 import btsImage from '../sources/bts.png'; // Import the image
-
-
+import React, { useState, useEffect } from 'react';
+import tailwindImage from '../sources/tailwind.png'; // Import the image
+import firebaseImage from '../sources/firebase.png'; // Import the image
 
 
 
 const About: React.FC = () => {
-  return (
+  const getRandomDelay = () => {
+    return Math.random() * 4 + 's';
+  };
+
+  return ( 
+    
     <div className='about'>
-      <img src={meImage} alt="Your Image" className="circular-image" />
+
+   
+      <img src={meImage} alt="eden" className="circular-image" />
 
       <div>
-        <h1>about</h1>
+        <h1>About</h1>
         <br/>
         <div className="summ">
-
+    <br/>
           I'm a Full Stack Developer from Tel-Aviv.
            I'm especially passionate about designing 
            interfaces, sports and fashion apps, and 
@@ -45,89 +52,94 @@ const About: React.FC = () => {
       <hr />
       <div>
     
-
         <h3>Key technologies I use:</h3>
         <br />
         <br />
 
        <h5 className="card-title">Frontend</h5>
-
-        <div className="card-body">
-          <div className="card">HTML <br/> <br/>
-          <img src={htmlImage} alt="Your Image" className="image html" />
-
+       <br/>
+        <div className="card-body ">
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }} > <br/> <br/>
+          <img src={htmlImage} alt="Your Image" className="image html "  />
+HTML
           </div>
-          <div className="card">CSS <br/> <br/>
-          <img src={cssImage} alt="Your Image" className="image css" />
-
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}><br/> <br/>
+          <img src={cssImage} alt="Your Image" className="image css" /> 
+          CSS 
           </div>
-          <div className="card">JavaScript <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}><br/> <br/>
           <img src={jsImage} alt="Your Image" className="image js" />
-
+JavaScript 
           </div>
-          <div className="card">jQuery <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={jqueryImage} alt="Your Image" className="image" />
-
+jQuery
           </div>
-          <div className="card">React <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={reactImage} alt="Your Image" className="image" />
-
+          React
           </div>
-          <div className="card">Angular <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={angularImage} alt="Your Image" className="image" />
-
+Angular
           </div>
         </div>
 
-        <br />
+        <br /><br />
 
         <h5 className="card-title">Backend</h5>
 
+
         <div className="card-body">
-          <div className="card">MongoDB <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}><br/> <br/>
           <img src={mongoImage} alt="Your Image" className="image" />
-
+MongoDB 
           </div>
-          <div className="card">Express <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={expressImage} alt="Your Image" className="image express" />
-
+Express
           </div>
-          <div className="card">PHP <br/> <br/>
-          <img src={phpImage} alt="Your Image" className="image php" />
 
-          </div>
-          <div className="card">MySQL <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={mysqlImage} alt="Your Image" className="image" />
-
+MySQL
           </div>
-          <div className="card">Node.JS <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
+          <img src={firebaseImage} alt="Your Image" className="image" />
+Firebase
+          </div>
+          
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={nodeImage} alt="Your Image" className="image" />
-
+Node.JS
           </div>
          
         </div>
-        <br />
+        <br /><br />
 
 
        <h5 className="card-title">Other</h5>
+       <br/>
+      
 
         <div className="card-body">
-          <div className="card">Bootstrap <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={btsImage} alt="Your Image" className="image bts" />
-
+Bootstrap
           </div>
-          <div className="card">Sass<br/> <br/>
-          <img src={sassImage} alt="Your Image" className="image sass" />
-
-          </div>
-          <div className="card">TypeScript <br/> <br/>
+         
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           
           <img src={tsImage} alt="Your Image" className="image" />
-
+TypeScript
           </div>
-          <div className="card">GitHub <br/> <br/>
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
+          <img src={tailwindImage} alt="Your Image" className="image tailwind" />
+tailwind          </div>
+         
+          <div className="card floating"  style={{ animationDelay: getRandomDelay() }}> <br/> <br/>
           <img src={gitImage} alt="Your Image" className="image" />
-
+GitHub
           </div>
          
         </div>
