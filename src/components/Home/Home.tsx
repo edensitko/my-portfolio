@@ -1,16 +1,12 @@
 import React from 'react';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import meImage from '../me.png'; // Import the image
-import admin from '../admin.jpg'; // Import the image
-import user from '../user.jpg'; // Import the image
 import { Link } from 'react-scroll';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import SvgIcon from '@mui/icons-material/ArrowDownward';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Typewriter from "typewriter-effect";
-import Header from '../header/header';
 const Home: React.FC = () => {
   return (
 

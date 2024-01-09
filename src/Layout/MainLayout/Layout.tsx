@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Grid } from '@mui/material';
 import './Layout.css';
 import Home from '../../components/Home/Home';
 import Projects from '../../components/projects/projects';

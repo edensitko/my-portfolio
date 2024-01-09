@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import meImage from '../sources/me.png'; // Import the image
 import './About.css';
-import sassImage from '../sources/sass.png'; // Import the image
 import reactImage from '../sources/react.png'; // Import the image
 import htmlImage from '../sources/html.png'; // Import the image
 import cssImage from '../sources/css.png'; // Import the image
@@ -10,13 +9,12 @@ import mongoImage from '../sources/mongo.png'; // Import the image
 import expressImage from '../sources/express.png'; // Import the image
 import nodeImage from '../sources/node.png'; // Import the image
 import mysqlImage from '../sources/mysql.png'; // Import the image
-import phpImage from '../sources/php.png'; // Import the image
 import gitImage from '../sources/github.png'; // Import the image
 import angularImage from '../sources/angular.png'; // Import the image
 import jqueryImage from '../sources/jquery.png'; // Import the image
 import tsImage from '../sources/ts.png'; // Import the image
 import btsImage from '../sources/bts.png'; // Import the image
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import tailwindImage from '../sources/tailwind.png'; // Import the image
 import firebaseImage from '../sources/firebase.png'; // Import the image
 

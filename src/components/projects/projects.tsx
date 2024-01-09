@@ -6,7 +6,6 @@ import vac from '../sources/vac.png';
 import cr from '../sources/cr.png'; 
 import ft from '../sources/ft.png'; 
 import chs from '../sources/chs.png'; 
-import { Link } from 'react-router-dom';
 
 const projectData = [
   {
