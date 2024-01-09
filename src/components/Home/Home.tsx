@@ -14,7 +14,7 @@ const Home: React.FC = () => {
 
     </div>
     
-<div className="space">
+<div className="space ">
   
    
       <div className="row ">    
