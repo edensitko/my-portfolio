@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './header.css';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from 'react-scroll';
 import esImage from '../sources/es.png'; 
 const Header: React.FC = () => {
